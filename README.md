@@ -17,20 +17,17 @@ EDOP is an enterprise platform that uses **Google Agent Development Kit (ADK) 2.
 - **Human-in-the-Loop** – Humans intervene only when they hold unique context the AI cannot access.
 - **Governance Control Plane** – Agent registry, policies, identity, full audit lineage, and observability (GCP-native).
 
-## Architecture
+## Architecture Diagrams
 
-### Conceptual Architecture
-See `docs/architecture/conceptual-architecture.jpg`
-
-### GCP Solution Architecture
-See `docs/architecture/gcp-solution-architecture.jpg`
+Conceptual and GCP solution architecture diagrams were generated as part of the design process. Detailed descriptions appear in the HLD and LLD. High-resolution images are available in the original design artifacts.
 
 ## Documentation
 
 | Document | Description |
 |----------|-------------|
-| [High Level Design (HLD)](docs/EDOP_High_Level_Design_HLD.docx) | Conceptual architecture, problem statements, GCP high-level solution, architectural decisions, tools & frameworks |
-| [Low Level Design (LLD)](docs/EDOP_Low_Level_Design_LLD.docx) | Detailed GCP deployment (GKE, Vertex AI, Pub/Sub, Cloud SQL/AlloyDB, security, observability) for project `intelligentmachines` |
+| [High Level Design (HLD)](docs/EDOP_High_Level_Design_HLD.md) | Conceptual architecture, problem statements, GCP high-level solution, architectural decisions, tools & frameworks |
+| [Low Level Design (LLD)](docs/EDOP_Low_Level_Design_LLD.md) | Detailed GCP deployment (GKE, Vertex AI, Pub/Sub, Cloud SQL/AlloyDB, security, observability) for project `intelligentmachines` |
+| [Docs Overview](docs/README.md) | Documentation index |
 
 ## Tech Stack
 
@@ -58,12 +55,10 @@ See `docs/architecture/gcp-solution-architecture.jpg`
 edop/
 ├── README.md
 ├── docs/
-│   ├── EDOP_High_Level_Design_HLD.docx
-│   ├── EDOP_Low_Level_Design_LLD.docx
-│   └── architecture/
-│       ├── conceptual-architecture.jpg
-│       └── gcp-solution-architecture.jpg
-└── (future source code, IaC, agent definitions)
+│   ├── README.md
+│   ├── EDOP_High_Level_Design_HLD.md
+│   └── EDOP_Low_Level_Design_LLD.md
+└── (future: source code, Terraform/IaC, ADK agent definitions)
 ```
 
 ## License
@@ -71,4 +66,4 @@ edop/
 Proprietary / Internal use – Intelligent Machines project.
 
 ---
-*Generated as part of the EDOP design initiative – September 2026*
+*EDOP design initiative – September 2026*
